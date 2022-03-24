@@ -1,0 +1,5 @@
+credentials_profile = "sandbox"
+aws_region          = "us-west-2"
+name                = "spacelift-pod"
+security_group_id   = "sg-00e38128d05827d70"
+subnet_id           = "subnet-5f61e207"

@@ -24,8 +24,9 @@ provider "aws" {
 }
 
 module "iam" {
-  source = "git::https://github.com/TrueCar/spacelift_tf_iam.git//config?ref=856de87"
+  source = "git::https://github.com/TrueCar/spacelift_tf_iam.git//config?ref=134463a6"
 
-  aws_region  = var.aws_region
-  environment = var.environment
+  aws_region          = var.aws_region
+  environment         = var.environment
+  credentials_profile = var.credentials_profile
 }

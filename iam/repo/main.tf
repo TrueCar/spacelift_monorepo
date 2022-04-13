@@ -23,6 +23,15 @@ provider "aws" {
   }
 }
 
+terraform {
+  required_providers {
+    aws = {
+      source  = "hashicorp/aws"
+      version = "~> 3"
+    }
+  }
+}
+
 module "iam" {
   source = "git::https://github.com/TrueCar/spacelift_tf_iam.git//config?ref=134463a6"
 

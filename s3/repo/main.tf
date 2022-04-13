@@ -10,6 +10,15 @@ variable "aws_profile" {
   type = string
 }
 
+terraform {
+  required_providers {
+    aws = {
+      source  = "hashicorp/aws"
+      version = "~> 3"
+    }
+  }
+}
+
 provider "aws" {
   profile = var.aws_profile
   region  = var.aws_region

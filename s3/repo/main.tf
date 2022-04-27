@@ -33,7 +33,7 @@ provider "aws" {
 }
 
 module "s3" {
-  source = "git::https://github.com/TrueCar/spacelift_tf_s3.git//config?ref=653b30b"
+  source = "git::https://github.com/TrueCar/spacelift_tf_s3.git//config?ref=d36a812"
 
   aws_region  = var.aws_region
   environment = var.environment

@@ -1,7 +1,7 @@
 terraform {
   backend "s3" {
     bucket     = "spacelift-poc-state-sandbox"
-    key        = "s3/sandbox.tfstate"
+    key        = "s3/qa.tfstate"
     profile    = "sandbox"
     region     = "us-west-2"
     encrypt    = true
